@@ -255,16 +255,21 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
-
-
-
-
-
-let myArr = numArrays.flat(Infinity);
 let total = 0;
-for(let num of myArr) {
-   total += num 
+for(let i = 0; i < numArrays.length; i++) {
+   for(let num of numArrays[i]) {
+      total += num
+   }
 }
+
+
+
+
+// let myArr = numArrays.flat(Infinity);
+// let total = 0;
+// for(let num of myArr) {
+//    total += num 
+// }
 
 
 console.log('Exercise 15 result:\n', total);
